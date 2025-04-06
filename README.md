@@ -1,54 +1,25 @@
-# React + TypeScript + Vite
+# MCP playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Motivations
 
-Currently, two official plugins are available:
+- I was feeling that it's dizzy to style UIs. The half of my working time is mark-up even if using the own design system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- I'm wondering if we could generate **sophisticated** UIs **automatically** using AI editors integrating with MCP(Model Context Protocol). If using the own design system or component libraries, I think we can delegate mark-up to AI.
 
-## Expanding the ESLint configuration
+- This repository is just sort of MCP(Model Context Protocol) study using [Cursor](https://docs.cursor.com/context/model-context-protocol).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Goals
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Making Cursor assistant for my working.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Integrating with the own design system or component libraries such as chakra-ui or Material.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Improving productivity.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## References
+
+- https://modelcontextprotocol.io/introduction
+
+- https://www.framelink.ai/
+
+- https://docs.cursor.com/context/model-context-protocol
